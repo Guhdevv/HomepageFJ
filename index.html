@@ -1,0 +1,1144 @@
+<!DOCTYPE html><html
+lang="pt-BR"><head><meta
+charset="UTF-8"><meta
+name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1.0"><title>Como colocar seu projeto no ar com o Github Pages? | Alura</title><meta
+name="description" content="Neste artigo,mostrarei como colocar o seu projeto no ar com o Github Pages. Você também vai entender o que é hospedagem e receberá dicas incríveis sobre o Github."><link
+rel="canonical" href="https://www.alura.com.br/artigos/como-colocar-projeto-no-ar-com-github-pages"><link
+rel="icon" href="/assets/favicon.1686744881.ico" /><link
+rel="preconnect" href="https://fonts.googleapis.com"><link
+rel="preconnect" href="https://fonts.gstatic.com/" crossorigin><link
+href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&family=Michroma&display=swap" rel="stylesheet"><link
+rel="stylesheet" href="/bundle,base/_reset,base/base,base/buttons,base/colors-apostilas,base/colors,base/titulos.1690913936.css"><link
+rel="stylesheet" href="/bundle,artigos/artigos,artigos/iframe.1704810120.css"><link
+rel="stylesheet" href="/bundle,cosmos/cosmos-article-list,cosmos/cosmos-content,cosmos/cosmos-header,cosmos/cosmos-media,cosmos/cosmos-related,cosmos/cosmos-webseries,cosmos/cosmos,cosmos/cosmosPodcast,cosmos/highlight.1686744883.css"><meta
+property="og:locale" content="pt_BR"><meta
+property="og:description" content="Neste artigo,mostrarei como colocar o seu projeto no ar com o Github Pages. Você também vai entender o que é hospedagem e receberá dicas incríveis sobre o Github."><meta
+property="og:title" content="Como colocar seu projeto no ar com o Github Pages? | Alura"><meta
+property="og:site_name" content="Alura"><meta
+property="og:url" content="https://www.alura.com.br/artigos/como-colocar-projeto-no-ar-com-github-pages"><meta
+property="og:image" content="https://www.alura.com.br/artigos/assets/como-colocar-projeto-no-ar-com-github-pages/imagem1.png"><meta
+property="og:image:alt" content="Alura logo"><meta
+property="fb:app_id" content="140078819399376"><meta
+property="og:type" content="website"><meta
+name="twitter:card" content="summary_large_image"><meta
+name="theme-color" content="#2A7AE4"><meta
+name="google-site-verification" content="e-ieHUO1JHyNyCZv0Z8Nu-R3ECPykHiNHHEhPdF35Bk" /><meta
+name="thumbnail" content="https://www.alura.com.br/artigos/assets/como-colocar-projeto-no-ar-com-github-pages/imagem1.png"> <script>;
+                (function(w, d, s, l, i) {
+                    w[l] = w[l] || [];
+                    w[l].push({
+                        'gtm.start': new Date().getTime(),
+                        event: 'gtm.js'
+                    });
+                    var f = d.getElementsByTagName(s)[0],
+                        j = d.createElement(s),
+                        dl = l != 'dataLayer' ? '&l=' + l : '';
+                    j.async = true;
+                    j.src =
+                        'https://www.googletagmanager.com/gtm.js?id=' + i + dl;
+                    f.parentNode.insertBefore(j, f);
+                })(window, document, 'script', 'dataLayer', 'GTM-TN542JN');</script> <script>;
+                (function(w, d, s, l, i) {
+                    w[l] = w[l] || [];
+                    w[l].push({
+                        'gtm.start': new Date().getTime(),
+                        event: 'gtm.js'
+                    });
+                    var f = d.getElementsByTagName(s)[0],
+                        j = d.createElement(s),
+                        dl = l != 'dataLayer' ? '&l=' + l : '';
+                    j.async = true;
+                    j.src =
+                        'https://load.stape.alura.com.br/qukryqvi.js?id=' + i + dl;
+                    f.parentNode.insertBefore(j, f);
+                })(window, document, 'script', 'dataLayerAlura', 'GTM-NTLWWLR');</script> <script async src="https://www.googleoptimize.com/optimize.js?id=OPT-KSJ3RWQ"></script>  <script async src="https://www.googletagmanager.com/gtag/js?id=AW-980051072"></script> <script>window.dataLayer = window.dataLayer || [];
+
+                function gtag() {
+                    dataLayer.push(arguments);
+                }
+                gtag('js', new Date());
+                gtag('config', 'AW-980051072');</script> <script async src='//www.google-analytics.com/analytics.js'></script> <script>var userId = (document.cookie.match('alura.userId=([^;]+)') || [null, null])[1];
+                window.ga = window.ga || function() {
+                    (ga.q = ga.q || []).push(arguments)
+                };
+                ga.l = +new Date;
+
+                                    ga(
+                        'create',
+                        'UA-42101548-1',
+                        'alura.com.br',
+                        'tracker0', {
+                            'siteSpeedSampleRate': 50
+                        }
+                    );
+
+                    if (userId) ga('tracker0.set', 'userId', userId);
+
+                    ga('tracker0.require', 'displayfeatures');
+                    ga('tracker0.send', 'pageview');</script> </head><body
+class=""> <script async src="/assets/js/avatarOnError.1686744882.js"></script> <noscript><iframe
+src="https://www.googletagmanager.com/ns.html?id=GTM-TN542JN" height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+<noscript><iframe
+src="https://www.googletagmanager.com/ns.html?id=GTM-NTLWWLR" height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript> <script>! function(f, b, e, v, n, t, s) {
+                        if (f.fbq) return;
+                        n = f.fbq = function() {
+                            n.callMethod ? n.callMethod.apply(n, arguments) : n.queue.push(arguments)
+                        };
+                        if (!f._fbq) f._fbq = n;
+                        n.push = n;
+                        n.loaded = !0;
+                        n.version = '2.0';
+                        n.queue = [];
+                        t = b.createElement(e);
+                        t.async = !0;
+                        t.src = v;
+                        s = b.getElementsByTagName(e)[0];
+                        s.parentNode.insertBefore(t, s)
+                    }(window, document, 'script', 'https://connect.facebook.net/en_US/fbevents.js');
+                    fbq('init', '1067810189950610');
+                    fbq('track', 'PageView');</script>  <script type="application/ld+json">{
+      "@context": "http://schema.org",
+      "@type": "BreadcrumbList",
+
+      "itemListElement": [{
+        "@type": "ListItem",
+        "position": 1,
+        "item": {
+          "@id": "https://www.alura.com.br",
+          "name": "Alura"
+        }
+      }   
+              ,{
+          "@type": "ListItem",
+          "position": 2,
+          "item": {
+            "@id": "https://www.alura.com.br/artigos",
+            "name": "Artigos"
+          }
+        }
+              ,{
+          "@type": "ListItem",
+          "position": 3,
+          "item": {
+            "@id": "https://www.alura.com.br/artigos/front-end",
+            "name": "Front-end"
+          }
+        }
+              ,{
+          "@type": "ListItem",
+          "position": 4,
+          "item": {
+            "@id": "https://www.alura.com.br/artigos/como-colocar-projeto-no-ar-com-github-pages",
+            "name": "Como colocar seu projeto no ar com o Github Pages?"
+          }
+        }
+            ]
+    }</script> <link
+rel="stylesheet" href="/assets/css/block/header.1698657911.css"><header
+class="header internalPage"><div
+class="header__principal"><nav
+class="container header__nav"><div
+class="header__nav--menu-cta">
+<img
+class="--to-open" src="/assets/img/header/icon-menu-open.1697825058.svg" alt="Botão para abrir o Menu">
+<img
+class="--to-close" src="/assets/img/header/icon-menu-close.1697825058.svg" alt="Botão para fechar o Menu"></div><a
+href="/" class="header__nav--logo">
+<img
+alt="Alura" src="/assets/img/home/alura-logo.1686744881.svg">
+</a><div
+class="header__nav--busca header-barraBusca"><form
+action="/busca" class="header__nav--busca-form">
+<input
+type="search" class="header__nav--busca-input" id="header-barraBusca-form-campoBusca" name="query" placeholder="O que você quer aprender?" required>
+<button
+class="header__nav--busca-submit" type="submit">
+<svg
+xmlns="http://www.w3.org/2000/svg" width="16" height="15" viewBox="0 0 16 15">
+<g
+fill="none" fill-rule="evenodd" stroke="#D7F9FF" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" transform="translate(1 1)">
+<path
+d="M13.637 12.86l-3.526-3.527" />
+<circle
+cx="5.667" cy="5.667" r="5.667" />
+</g>
+</svg>
+</button></form></div><div
+class="header__nav--ctas">
+<a
+class="header__nav--ctas-entrar header__nav--link-hover" href="https://cursos.alura.com.br/loginForm">Entrar</a>
+<a
+class="header__nav--ctas-matricule" href="/planos-cursos-online">Matricule-se</a></div><div
+class="header__nav--menu">
+<a
+href="/como-funciona" class="header__nav--menu-link header__nav--link-hover">
+<span>Como</span>
+<span>Funciona</span>
+</a>
+<a
+href="/empresas" class="header__nav--menu-link header__nav--link-hover">
+<span>Para</span>
+<span>Empresas</span>
+</a></div></nav></div><div
+class="header__nav--courses"><div
+class="container"><ul
+class="header__nav--courses-list"><li
+class="header__nav--courses-item --programacao">
+<a
+href="/cursos-online-programacao" class="header__nav--courses-item-link">
+Programação                                    <span
+style="color: #00c86f;">_</span>
+</a></li><li
+class="header__nav--courses-item --front-end">
+<a
+href="/cursos-online-front-end" class="header__nav--courses-item-link">
+Front-end                                    <span
+style="color: #6bd1ff;">_</span>
+</a></li><li
+class="header__nav--courses-item --data-science">
+<a
+href="/cursos-online-data-science" class="header__nav--courses-item-link">
+Data Science                                    <span
+style="color: #9cd33b;">_</span>
+</a></li><li
+class="header__nav--courses-item --inteligencia-artificial">
+<a
+href="/cursos-online-inteligencia-artificial" class="header__nav--courses-item-link">
+Inteligência Artificial                                    <span
+style="color: #7b71ff;">_</span>
+</a></li><li
+class="header__nav--courses-item --devops">
+<a
+href="/cursos-online-devops" class="header__nav--courses-item-link">
+DevOps                                    <span
+style="color: #f16165;">_</span>
+</a></li><li
+class="header__nav--courses-item --design-ux">
+<a
+href="/cursos-online-design-ux" class="header__nav--courses-item-link">
+UX & Design                                    <span
+style="color: #dc6ebe;">_</span>
+</a></li><li
+class="header__nav--courses-item --mobile">
+<a
+href="/cursos-online-mobile" class="header__nav--courses-item-link">
+Mobile                                    <span
+style="color: #ffba05;">_</span>
+</a></li><li
+class="header__nav--courses-item --inovacao-gestao">
+<a
+href="/cursos-online-inovacao-gestao" class="header__nav--courses-item-link">
+Inovação & Gestão                                    <span
+style="color: #ff8c2a;">_</span>
+</a></li></ul></div></div></header><section
+class="cosmos-container-color"><div
+class="cosmos-color"><div
+class="cosmos artigos-topo"><div
+class="container">
+<a
+href="/artigos" class="artigos-topo__label">
+Artigos
+</a>
+&gt;
+<a
+class="artigos-topo__label --artigos-strong" href="/artigos/front-end" style="color:#6bd1ff">Front-end</a></div></div></div> <script type="application/ld+json">{
+  "@context": "https://schema.org",
+  "@type": "Article",
+  "mainEntityOfPage": {
+    "@type": "WebPage",
+    "@id": "https://www.alura.com.br/artigos/como-colocar-projeto-no-ar-com-github-pages"
+  },
+  "headline": "Como colocar seu projeto no ar com o Github Pages?",
+  "description": "Neste artigo,mostrarei como colocar o seu projeto no ar com o Github Pages. Você também vai entender o que é hospedagem e receberá dicas incríveis sobre o Github.",
+  "image": "https://www.alura.com.br/artigos/assets/como-colocar-projeto-no-ar-com-github-pages/imagem1.png",
+  "datePublished": "2022-04-08",
+    "dateModified": "2023-09-18",
+      "author": {
+        "@type": "Organization",
+    "name": "Alura",
+    "url": "https://www.alura.com.br",
+    "logo": {
+      "@type": "ImageObject",
+    "url": "https://www.alura.com.br/assets/api/share/alura.jpg",
+      "height" : 60, 
+      "width" : 600,
+      "sameAs":["https://www.youtube.com/alura",
+               "https://www.facebook.com/AluraCursosOnline/",
+               "https://twitter.com/aluraonline",
+               "https://www.instagram.com/aluraonline/",
+               "https://play.google.com/store/apps/details?id=br.com.alura.mobi&hl=pt_BR&gl=US",
+               "https://apps.apple.com/br/app/alura-cursos-online/id1225776635"],
+      "contactPoint":{
+      "@type":"ContactPoint",
+     "email":"contato@alura.com.br",
+     "contactType":"customer support"
+     }},
+   "publisher": {
+    "@type": "Organization",
+    "name": "Alura",
+    "url": "https://www.alura.com.br",
+       "reviewedBy": {
+     "@type": "Person",
+     "name": "Neilton Seguins",
+     "image": "https://cdn2.gnarususercontent.com.br/1/1159683/d98ae099-4874-4975-9a19-4d3845ede680.jpg?width=200&height=200&aspect_ratio=1:1"
+   }
+     }}}</script> <section
+class="cosmos-color"><article
+class="cosmos"
+data-ga4-article-name="Como colocar seu projeto no ar com o Github Pages?"
+data-ga4-article-category="Front-end"
+data-ga4-article-author="Neilton Seguins"
+><div
+class="cosmos-header"><h1>Como colocar seu projeto no ar com o Github Pages?</h1><div
+class="cosmos-image__wrapper">
+<img
+src="assets/como-colocar-projeto-no-ar-com-github-pages/como-colocar-projeto-no-ar-com-github-pages.png"
+alt="Como colocar seu projeto no ar com o Github Pages?"
+class="cosmos-image cosmos-banner-top"
+style="border: none; padding: 0px; width: 100%; height: 300px; object-fit: cover; max-width: none;"></div><div
+class="cosmos-header-info"><div
+class="cosmos-author">
+<img
+loading="lazy" class="cosmos-author-img" src="https://cdn2.gnarususercontent.com.br/1/1159683/d98ae099-4874-4975-9a19-4d3845ede680.jpg?width=200&height=200&aspect_ratio=1:1" alt="Neilton Seguins" width="50" height="50"><div><div
+class="cosmos-author-name">Neilton Seguins</div>
+<time
+class="cosmos-author-date"
+datetime="2023-09-18 10:55">
+Atualizado em 18 de  Setembro                                    </time></div></div><div
+class="cosmos-container-social-media"><p
+class="cosmos-text-social-media">Compartilhe</p><ul
+class="cosmos-container-flex-social-media"><li
+class="--icon-twitter">
+<a
+href="https://twitter.com/share?url=https://www.alura.com.br/artigos/como-colocar-projeto-no-ar-com-github-pages"></a></li><li
+class="--icon-linkedin">
+<a
+href="https://linkedin.com/shareArticle?url=https://www.alura.com.br/artigos/como-colocar-projeto-no-ar-com-github-pages"></a></li><li
+class="--icon-facebook">
+<a
+href="https://facebook.com/share.php?u=https://www.alura.com.br/artigos/como-colocar-projeto-no-ar-com-github-pages"></a></li><li
+class="--icon-whatsapp">
+<a
+href="https://api.whatsapp.com/send?text=https://www.alura.com.br/artigos/como-colocar-projeto-no-ar-com-github-pages"></a></li></ul></div></div></div><div
+class="cosmos-header-line"></div><main
+class="article__main-content"><aside
+class="article__aside-content"><link
+rel="stylesheet" href="/assets/css/block/tableOfContents.1696890832.css"><div
+class="table-of-contents">
+<span>Confira neste artigo:</span><nav><ol><li>
+<a
+href="#introducao">
+Introdução                </a></li><li>
+<a
+href="#o-que-e-hospedagem?">
+O que é hospedagem?                </a></li><li>
+<a
+href="#o-que-e-o-github-pages?">
+O que é o github pages?                </a></li><li>
+<a
+href="#colocando-seu-projeto-no-ar">
+Colocando seu projeto no ar                </a></li><li>
+<a
+href="#dicas-extras">
+Dicas extras                </a></li><li>
+<a
+href="#conclusao">
+Conclusão                </a></li></ol></nav></div></aside><div
+class="cosmos-color cosmos"><h2 id="introducao">Introdução</h2><p>Você já pensou em compartilhar um projeto muito bom que criou com <a
+href="https://www.alura.com.br/artigos/html-css-e-js-definicoes">HTML, CSS e Javascript</a>, como um site por exemplo, mas não sabe como e onde publicar? Então, vem comigo que vou lhe mostrar como colocar seus projetos no ar com o <strong>Github Pages</strong>.</p><p>Neste artigo você vai aprender:</p><ul><li>Sobre os serviços de hospedagem e suas aplicações;</li><li>O que é o Github Pages;</li><li>Como colocar seu projeto no ar.</li></ul><p>E muitas dicas legais para deixar seu projeto ainda mais incrível! Vamos lá?</p><a
+href="https://conteudo.alura.com.br/guia-de-carreira-front-end?utm_source=blog&utm_medium=artigo&utm_content=banner-material-rico&utm_campaign=gtm-front-end"
+data-ga4-banner-name="banner-guia-carreira-front-end"
+class="cosmos-banner-image">
+<picture>
+<source
+media="(min-width: 768px)" srcset="assets/guia-de-carreira-front-end-alura/guia-de-carreira-front-end-alura-banner-corpo-desktop.png" />
+<img
+class="cosmos-image" src="assets/guia-de-carreira-front-end-alura/guia-de-carreira-front-end-alura-banner-corpo-mobile.png" alt="Banner promocional da Alura, com um design futurista em tons de azul, apresentando o texto "Já sabe quais os próximos passos para seus estudos em Front-end? O Guia de Carreira em Front-end vai te ajudar nisso". À direita, está a foto de um jovem sorridente olhando para a esquerda do banner, ao lado de uma lista de tópicos oferecidos pelo guia, como "Principais cursos e formações da Alura nessa área", "Caminhos para carreira Front-end Angular e React", "Como migrar do Front-end para Back-end" e "Dicas de especialistas na área". No canto inferior direito, há um ícone de download e o texto "Baixe gratuitamente"." loading="lazy" />
+</picture>
+</a><h2 id="o-que-e-hospedagem?">O que é hospedagem?</h2><p>Um site é composto por um conjunto de arquivos que são carregados pelo navegador e exibidos na forma que comumente vemos nas páginas na web. Esses arquivos são códigos, textos, imagens, arquivos de fonte, etc. que juntos compõem o seu projeto. Eles precisam estar guardados em um local, que chamamos de <strong>servidor</strong>.</p><p>Quando você abre sua página enquanto está desenvolvendo, o servidor é o seu próprio computador, que contém os arquivos. Mas, para colocar seu site no ar, é preciso realizar o que chamamos de <strong>hospedagem</strong>.</p>
+<img
+src="assets/como-colocar-projeto-no-ar-com-github-pages/imagem1.png" alt="Ilustração comparando uma casa com o serviço de hospedagem, onde o terreno é a hospedagem, a casa é o site, o domínio o endereço e a rua a internet." loading="lazy" class="cosmos-image" /><p>Hospedagem é um serviço online que permite a publicação de um site ou de uma aplicação na internet. De forma simples, é um espaço no servidor que armazena todos os arquivos necessários para exibir a sua página na internet. Comparando a uma casa, podemos dizer que a hospedagem é o terreno, sua casa o site, seu domínio o endereço e, por sua vez, a internet a rua.</p><p>Existem diversos serviços de hospedagem na internet e um deles é o <strong>Github Pages</strong>.</p><h2 id="o-que-e-o-github-pages?">O que é o github pages?</h2><p>O Github Pages é o serviço de hospedagem de <strong>sites estáticos</strong> do Github. Ele usa arquivos HTML, CSS e <a
+href="https://www.alura.com.br/artigos/javascript">Javascript</a> diretamente de um repositório, executa os arquivos por meio de um processo e publica um site. Nele, é possível hospedar seu site, de sua empresa ou organização, ou de um projeto que você queira mostrar para seu time.</p><p>Também é possível publicar seu site de um repositório público ou privado, com o domínio github.io ou mesmo <a
+href="https://docs.github.com/pt/pages/configuring-a-custom-domain-for-your-github-pages-site" target="_blank" rel="noopener">personalizar seu domínio</a>. Se quiser saber mais sobre domínio e como funcionam as páginas web é só <a
+href="https://cursos.alura.com.br/course/http-fundamentos">clicar aqui</a>.</p><p>Agora que entendemos o que é hospedagem e o Github Pages, já estamos prontos para colocar nosso site no ar.</p><h2 id="colocando-seu-projeto-no-ar">Colocando seu projeto no ar</h2><p>Antes de criar seu site, você precisa ter um repositório para ele no Github. Se você ainda não sabe como criar um repositório no Github <a
+href="https://docs.github.com/pt/pages/getting-started-with-github-pages/creating-a-github-pages-site#creating-a-repository-for-your-site" target="_blank" rel="noopener">clique aqui</a>.</p><h3>Passo 1</h3><p>Em Github, acesse o repositório do seu site. Se você usa o Github Free, é importante que seu repositório esteja como público. Vá em <strong>configurações</strong> (Settings). Na seção <strong>code e automation</strong>, clique em <strong>Pages</strong>. Na opção <strong>Source</strong>, abra o menu suspenso e selecione uma fonte de publicação, ou seja, a branch que desejar.</p>
+<img
+src="assets/como-colocar-projeto-no-ar-com-github-pages/imagem2.gif" alt="Passo a passo de como ir até o repositório, em configurações, depois em pages e configurar a fonte de publicação como a branch main." loading="lazy" class="cosmos-image" /><h3>Passo 2</h3><p>De forma opcional, você pode selecionar uma pasta para sua fonte de publicação. Para isso, clique no segundo menu suspenso que aparece depois do passo 1 e selecione uma pasta da sua fonte de publicação. Com isso feito, é só <strong>Salvar</strong>.</p>
+<img
+src="assets/como-colocar-projeto-no-ar-com-github-pages/imagem3.gif" alt="Passo a passo de como configurar a pasta na fonte de publicação do site." loading="lazy" class="cosmos-image" /><h3>Passo 3</h3><p>Aguarde enquanto o Github Pages conclui o processo de colocar seu site no ar. Ele vai lhe dar uma url com domínio <strong>github.io</strong> e ela estará pronta para ser acessada quando aparecer um sinal de OK e a cor verde ao redor da url. Depois disso, é só acessar sua página!</p>
+<img
+src="assets/como-colocar-projeto-no-ar-com-github-pages/imagem4.gif" alt="Status da url do site publicado com o Github Pages." loading="lazy" class="cosmos-image" /><p>Você pode acessar o site do exemplo em <a
+href="https://alura-cursos.github.io/challend-frontend-alura/" target="_blank" rel="noopener">AluraGeek</a>!</p><h2 id="dicas-extras">Dicas extras</h2><ul><li>Deixe sempre o arquivo <code>.html</code> que você quer exibir como página inicial do seu site na <strong>pasta raíz</strong> da sua fonte de publicação.</li><li>Não se preocupe se demorar para que sua página esteja no ar. Este processo pode demorar de alguns segundos a minutos.</li><li>Se o seu site não tiver uma página 404 ainda, é possível adicionar essa página com o Github Pages. Uma página 404 é uma página de erro que será exibida sempre que um usuário tentar acessar um caminho que não existe na sua url. Saiba como <a
+href="https://docs.github.com/pt/pages/getting-started-with-github-pages/creating-a-custom-404-page-for-your-github-pages-site" target="_blank" rel="noopener">neste link</a>.</li><li>Se você quiser editar algum arquivo direto no Github, você pode fazer isso indo até seu repositório e pressionando a tecla <code>**.**</code> do seu teclado. Isso fará com que abra uma <a
+href="https://www.alura.com.br/artigos/o-que-e-uma-ide">IDE</a> parecida com o VS Code no seu navegador. Este é um recurso do Github ainda em fase de testes, então pode haver possíveis obstáculos durante o uso, Ok?</li></ul><h2 id="conclusao">Conclusão</h2><p>Viu como você também pode publicar o seu projeto no Github Pages?</p><p>Você também aprendeu:</p><ul><li>Conceito de hospedagem;</li><li>O que são serviços de hospedagem;</li><li>O que é o Github Pages;</li><li>Extra: Como colocar uma página 404 no seu site.</li></ul><p>Se quiser saber mais sobre como personalizar seu perfil no Github e criar um readme incrível para seus projetos só acessar os links abaixo:</p><ul><li><a
+href="https://www.alura.com.br/artigos/como-criar-um-readme-para-seu-perfil-github">Como criar um README para o seu perfil do GitHub</a>;</li><li><a
+href="https://www.alura.com.br/artigos/escrever-bom-readme">Como escrever um README incrível no seu Github</a>.</li></ul><p>Para fazer mergulhos ainda mais profundos sobre o universo front-end, a Alura tem uma formação exclusiva com diversos cursos incríveis:</p><ul><li><a
+href="https://cursos.alura.com.br/formacao-front-end">Formação Front-End</a>.</li></ul><p>E na Aluraflix, você encontra uma websérie completa de como usar o Git e Github, com diversas dicas e boas práticas:</p><ul><li><a
+href="https://cursos.alura.com.br/extra/webseries-git-github/como-o-git-funciona-w1258">Websérie Git e Github</a>.</li></ul><p>Até a próxima!</p></div></main><div
+class="cosmos-author-sobre">
+<img
+loading="lazy" class="cosmos-author-img" src="https://cdn2.gnarususercontent.com.br/1/1159683/d98ae099-4874-4975-9a19-4d3845ede680.jpg?width=200&height=200&aspect_ratio=1:1" alt="Neilton Seguins" width="150" height="150"><div
+class="cosmos-author-txt"><div
+class="cosmos-author-name">Neilton Seguins</div><p>Sou graduado como Bacharel em Ciência e Tecnologia e em Engenharia Mecânica. Atuo como Instrutor de Desenvolvedor de Software na Alura e possuo experiência com desenvolvimento usando JavaScript/TypeScript, React js, Next js e Node.js. Amo compartilhar conhecimento, pois acredito que a educação é transformadora e quero mudar a vida de pessoas através da educação assim como consegui mudar de vida. Também amo ouvir e tocar música, ler livros e mangás e assistir séries.</p></div></div><nav
+class="cosmos__navigation">
+<a
+href="conhecendo-playgrounds-bibliotecas-front-end" class="cosmos__navigation-link --previous"><div
+class="cosmos__navigation-item"><div
+class="cosmos__navigation-label">
+<span
+class="cosmos__navigation-decoration"></span>
+<span
+class="cosmos__navigation-description">Artigo Anterior</span></div>
+<strong> Conhecendo playgrounds de bibliotecas front-end </strong></div>
+</a>
+<a
+href="svelte-versus-react-quais-diferencas" class="cosmos__navigation-link --next"><div
+class="cosmos__navigation-item"><div
+class="cosmos__navigation-label">
+<span
+class="cosmos__navigation-decoration"></span>
+<span
+class="cosmos__navigation-description">Próximo Artigo</span></div>
+<strong
+class="cosmos__navigation-item-title" > Svelte: o que é, como funciona e diferenças com o React JS </strong></div>
+</a></nav></article></section><div
+class="cosmos-other-files"><div
+class="container --container-banner-flex"><div
+class="categories-artigos" style="background:#6bd1ff;">
+<svg
+class="categories-artigos-icon" style="fill:#ffffff" xmlns:xlink="http://www.w3.org/1999/xlink">
+<use
+xlink:href="/svg,1687868842/categorias#icon-categorias-front-end" />
+</svg></div><p
+class="cosmos-other-files-text">Veja outros artigos sobre <a
+href="/artigos/front-end" style="color:#6bd1ff">Front-end</a></p></div></div><div
+class="cosmos-color"><div
+class="cosmos --newsletter-spacing"><link
+rel="stylesheet" href="/assets/css/block/subscribeNewsletterCard.1686744881.css"><div
+class="subscribeNewsletterCard-container"><section
+class="subscribeNewsletterCard-wrapper"><div
+class="subscribeNewsletterCard-decoration"></div><div
+class="subscribeNewsletterCard-busca-box container"><div
+class="subscribeNewsletterCard-box-texto"><p
+class="subscribeNewsletterCard-texto-bold">Quer mergulhar em tecnologia e aprendizagem?</p><p
+class="subscribeNewsletterCard-texto-normal">Receba a newsletter que o nosso CEO escreve pessoalmente,
+com insights do mercado de trabalho, ciência e desenvolvimento de software</p></div><form
+id="subscribeNewsletterCard__activecampaign" class="subscribeNewsletterCard-form" action="/api/activecampaign" method="POST">
+<input
+type="hidden" name="list" value="14">
+<input
+type="hidden" name="retorno" value="/newsletter-cadastrado">
+<input
+class="activecampaign-input subscribeNewsletterCard-input" id="activecampaing-email" type="email" placeholder="Escreva seu email" name="email" required>
+<button
+class="activecampaign-button subscribeNewsletterCard-button" type="submit">Me inscreva</button></form></div></section></div> <script>(function() {
+            function criaCampo(nome, valor, form) {
+                if (valor === null) return;
+
+                var input = document.createElement('input');
+                input.type = 'hidden';
+                input.name = nome;
+                input.value = valor;
+
+                form.appendChild(input);
+            }
+
+            function param(name) {
+                var url = location.href;
+                name = name.replace(/[\[]/,"\\\[").replace(/[\]]/,"\\\]");
+                var regexS = "[\\?&]"+name+"=([^&#]*)";
+                var regex = new RegExp( regexS );
+                var results = regex.exec( url );
+                return results == null ? null : results[1];
+            }
+
+            function showNewsletterError() {
+                document.querySelector('.newsletter-message-error').classList.remove('newsletter-message-error--disabled');
+            }
+
+            function valida() {
+                var isValid = true;
+                var inputList = document.querySelector('#subscribeNewsletterCard__activecampaign')['list'];
+                var inputEmail = document.querySelector('#subscribeNewsletterCard__activecampaign')['email'];
+
+                isValid = validaEmail(inputEmail.value) && validaList(inputList.value);
+
+                if(!isValid) {
+                    showNewsletterError();
+                }
+
+                return isValid;
+            }
+
+            function validaList(list) {
+                return list != '-1';
+            }
+
+            function validaEmail(email) {
+                var re = /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
+                return re.test(email);
+            }
+
+            var form = document.querySelector('#subscribeNewsletterCard__activecampaign');
+            if(!form) return;
+
+            criaCampo('utm_source', param('utm_source'), form);
+            criaCampo('utm_campaign', param('utm_campaign'), form);
+            criaCampo('utm_medium', param('utm_medium'), form);
+            criaCampo('utm_term', param('utm_term'), form);
+            criaCampo('utm_content', param('utm_content'), form);
+            criaCampo('full_url', location.href, form);
+            criaCampo('user_agent', navigator.userAgent, form);
+            criaCampo('referral', document.referrer, form);
+
+            form.onsubmit = valida;
+
+        })();</script> </div></div></section><link
+rel="stylesheet" href="/assets/css/block/footer.1686744881.css"><footer
+class="footer"><div
+class="container"><div
+class="footer-info flex-row"><div
+class="footer-logos">
+<a
+class="footer-logos-home" gtm-data='footer_primeira_secao_050' href="/">
+<img
+src="/assets/img/home/alura-logo.1686744881.svg" alt="Alura" class="footer-logo" loading="lazy">
+</a><p
+class="footer-navegue-lista-link --description">
+<span
+class="footer-empresa-item">AOVS Sistemas de Informática S.A</span>
+<span
+class="footer-empresa-item">CNPJ 05.555.382/0001-33</span></p></div><div
+class="footer-card-hotLinks social-desktop"><h2 class="footer-card-hotLinks-titulo">Nossas redes e apps</h2><div
+class="footer-card-hotLinks-info footer-card-redes">
+<a
+href="https://www.youtube.com/alura" gtm-data='footer_primeira_secao_065' class="footer-card-hotLinks-link"
+target="_blank" rel="noopener" title="YouTube da Alura">
+<svg
+class="footer-card-hotLinks-icon footer-card-hotLinks-youtube">
+<use
+xlink:href="/svg,1686744881/footer#icon-footer-youtube" />
+</svg>
+<span>YouTube</span>
+</a>
+<a
+href="https://www.facebook.com/AluraCursosOnline/" gtm-data='footer_primeira_secao_066'
+class="footer-card-hotLinks-link" target="_blank" rel="noopener" title="Facebook da Alura">
+<svg
+class="footer-card-hotLinks-icon footer-card-hotLinks-facebook">
+<use
+xlink:href="/svg,1686744881/footer#icon-footer-facebook" />
+</svg>
+<span>Facebook</span>
+</a>
+<a
+href="https://twitter.com/aluraonline" gtm-data='footer_primeira_secao_067' class="footer-card-hotLinks-link"
+target="_blank" rel="noopener" title="Twitter da Alura">
+<svg
+class="footer-card-hotLinks-icon footer-card-hotLinks-twitter">
+<use
+xlink:href="/svg,1686744881/footer#icon-footer-twitter" />
+</svg>
+<span>Twitter</span>
+</a>
+<a
+href="https://instagram.com/aluraonline" class="footer-card-hotLinks-link" gtm-data='footer_primeira_secao_073'
+target="_blank" rel="noopener" title="Instagram da Alura">
+<svg
+class="footer-card-hotLinks-icon footer-card-hotLinks-instagram">
+<use
+xlink:href="/svg,1686744881/footer#icon-footer-instagram" />
+</svg>
+<span>Instagram</span>
+</a>
+<a
+href="https://play.google.com/store/apps/details?id=br.com.alura.mobi&hl=pt_BR"
+gtm-data='footer_primeira_secao_069' class="footer-card-hotLinks-link" target="_blank" rel="noopener"
+title="Baixar na Google Play Store">
+<svg
+class="footer-card-hotLinks-icon footer-card-hotLinks-mobile">
+<use
+xlink:href="/svg,1686744881/footer#icon-footer-googleplay" />
+</svg>
+<span>Google Play Store</span>
+</a>
+<a
+href="https://itunes.apple.com/br/app/alura-cursos-online/id1225776635" gtm-data='footer_primeira_secao_070'
+class="footer-card-hotLinks-link" target="_blank" rel="noopener" title="Baixar na AppStore">
+<svg
+class="footer-card-hotLinks-icon footer-card-hotLinks-mobile">
+<use
+xlink:href="/svg,1686744881/footer#icon-footer-appstore" />
+</svg>
+<span>AppStore</span>
+</a>
+<a
+href="https://www.tiktok.com/@aluraonline?lang=pt-BR" gtm-data='footer_primeira_secao_071' class="footer-card-hotLinks-link"
+target="_blank" rel="noopener" title="TikTok da Alura">
+<svg
+class="footer-card-hotLinks-icon footer-card-hotLinks-youtube">
+<use
+xlink:href="/svg,1686744881/footer#icon-footer-tiktok" />
+</svg>
+<span>TikTok</span>
+</a></div></div><div
+class="footer-card-hotLinks social-mobile"><h2 class="footer-card-hotLinks-titulo">Nossas redes e apps</h2><div
+class="footer-card-hotLinks-info footer-card-redes">
+<a
+href="https://www.youtube.com/alura" gtm-data='footer_primeira_secao_065' class="footer-card-hotLinks-link"
+target="_blank" rel="noopener" title="YouTube da Alura">
+<svg
+class="footer-card-hotLinks-icon footer-card-hotLinks-youtube">
+<use
+xlink:href="/svg,1686744881/footer#icon-footer-youtube" />
+</svg>
+<span>YouTube</span>
+</a>
+<a
+href="https://www.facebook.com/AluraCursosOnline/" gtm-data='footer_primeira_secao_066'
+class="footer-card-hotLinks-link" target="_blank" rel="noopener" title="Facebook da Alura">
+<svg
+class="footer-card-hotLinks-icon footer-card-hotLinks-facebook">
+<use
+xlink:href="/svg,1686744881/footer#icon-footer-facebook" />
+</svg>
+<span>Facebook</span>
+</a>
+<a
+href="https://twitter.com/aluraonline" gtm-data='footer_primeira_secao_067' class="footer-card-hotLinks-link"
+target="_blank" rel="noopener" title="Twitter da Alura">
+<svg
+class="footer-card-hotLinks-icon footer-card-hotLinks-twitter">
+<use
+xlink:href="/svg,1686744881/footer#icon-footer-twitter" />
+</svg>
+<span>Twitter</span>
+</a>
+<a
+href="https://instagram.com/aluraonline" class="footer-card-hotLinks-link" gtm-data='footer_primeira_secao_073'
+target="_blank" rel="noopener" title="Instagram da Alura">
+<svg
+class="footer-card-hotLinks-icon footer-card-hotLinks-instagram">
+<use
+xlink:href="/svg,1686744881/footer#icon-footer-instagram" />
+</svg>
+<span>Instagram</span>
+</a>
+<a
+href="https://play.google.com/store/apps/details?id=br.com.alura.mobi&hl=pt_BR"
+gtm-data='footer_primeira_secao_069' class="footer-card-hotLinks-link" target="_blank" rel="noopener"
+title="Baixar na Google Play Store">
+<svg
+class="footer-card-hotLinks-icon footer-card-hotLinks-mobile">
+<use
+xlink:href="/svg,1686744881/footer#icon-footer-googleplay" />
+</svg>
+<span>Google Play Store</span>
+</a>
+<a
+href="https://itunes.apple.com/br/app/alura-cursos-online/id1225776635" gtm-data='footer_primeira_secao_070'
+class="footer-card-hotLinks-link" target="_blank" rel="noopener" title="Baixar na AppStore">
+<svg
+class="footer-card-hotLinks-icon footer-card-hotLinks-mobile">
+<use
+xlink:href="/svg,1686744881/footer#icon-footer-appstore" />
+</svg>
+<span>AppStore</span>
+</a>
+<a
+href="https://www.tiktok.com/@aluraonline?lang=pt-BR" gtm-data='footer_primeira_secao_071' class="footer-card-hotLinks-link"
+target="_blank" rel="noopener" title="TikTok da Alura">
+<svg
+class="footer-card-hotLinks-icon footer-card-hotLinks-youtube">
+<use
+xlink:href="/svg,1686744881/footer#icon-footer-tiktok" />
+</svg>
+<span>TikTok</span>
+</a></div></div></div><div
+class="footer-navegue"><div
+class="navegue-column"><h2 class="footer-navegacao-titulo">Institucional</h2><ul
+class="footer-navegue-lista"><li
+class="footer-navegue-lista-link"><a
+href="/sobre" gtm-data='footer_primeira_secao_063'>Sobre nós</a></li><li
+class="footer-navegue-lista-link"><a
+href="https://grupoalura.gupy.io">Trabalhe conosco</a></li><li
+class="footer-navegue-lista-link"><a
+href="https://www.alura.com.br/empresas">Para
+Empresas</a></li><li
+class="footer-navegue-lista-link"><a
+href="https://alurastart.com.br/">Para Sua Escola</a></li><li
+class="footer-navegue-lista-link"><a
+href="/politica-de-privacidade"
+gtm-data='footer_primeira_secao_061'>Política de Privacidade</a></li><li
+class="footer-navegue-lista-link"><a
+href="/compromisso-de-integridade">Compromisso de Integridade</a></li><li
+class="footer-navegue-lista-link"><a
+href="/termos-de-uso" gtm-data='footer_primeira_secao_062'>Termos
+de
+Uso</a></li><li
+class="footer-navegue-lista-link"><a
+href="https://status.alura.com.br/">Status</a></li></ul></div><div
+class="navegue-column"><h2 class="footer-navegacao-titulo">A Alura</h2><ul
+class="footer-navegue-lista"><li
+class="footer-navegue-lista-link"><a
+href="/formacoes" gtm-data='footer_primeira_secao_064'>Formações</a></li><li
+class="footer-navegue-lista-link"><a
+href="/como-funciona" gtm-data='footer_primeira_secao_064'>Como
+Funciona</a></li><li
+class="footer-navegue-lista-link"><a
+href="/cursos-online-tecnologia"
+gtm-data='footer_primeira_secao_054'>Todos os cursos</a></li><li
+class="footer-navegue-lista-link"><a
+href="/depoimentos"
+gtm-data="footer_primeira_secao_069">Depoimentos</a></li><li
+class="footer-navegue-lista-link"><a
+href="/instrutores"
+gtm-data="footer_primeira_secao_061">Instrutores(as)</a></li><li
+class="footer-navegue-lista-link"><a
+href="/dev-em-t" gtm-data='footer_primeira_secao_065'>Dev em
+&lt;T&gt;</a></li><li
+class="footer-navegue-lista-link"><a
+href="/luri-inteligencia-artificial" gtm-data='footer_primeira_secao_065'>Luri by ChatGPT</a></li></ul></div><div
+class="navegue-column"><h2 class="footer-navegacao-titulo">Conteúdos</h2><ul
+class="footer-navegue-lista"><li
+class="footer-navegue-lista-link"><a
+href="/cases">Alura Cases</a></li><li
+class="footer-navegue-lista-link"><a
+href="/imersao" gtm-data="footer_primeira_secao_068">Imersões</a></li><li
+class="footer-navegue-lista-link"><a
+href="/artigos" gtm-data='footer_primeira_secao_058'>Artigos</a></li><li
+class="footer-navegue-lista-link"><a
+href="/podcasts">Podcasts</a></li><li
+class="footer-navegue-lista-link"><a
+href="/empresas/artigos">Artigos de educação <br> corporativa</a></li></ul></div><div
+class="navegue-column"><h2 class="footer-navegacao-titulo">Fale Conosco</h2><ul
+class="footer-navegue-lista"><li
+class="footer-navegue-lista-link"><a
+href="https://www.alura.com.br/contato">Email e telefone</a></li><li
+class="footer-navegue-lista-link"><a
+href="https://suporte.alura.com.br/"
+gtm-data='footer_primeira_secao_066'>Perguntas frequentes</a></li></ul></div><div
+class="footer-column footer-column-cards"><div
+class="newsletter"><h2 class="newsletter-titulo">Novidades e Lançamentos</h2><div
+class="hubspot-form newsletter-form"> <script charset="utf-8" type="text/javascript" src="//js.hsforms.net/forms/v2.js?pre=1"></script> <script>hbspt.forms.create({
+                region: "na1",
+                portalId: "21748317",
+                formId: "39a8f8bd-d48f-4f45-8ed4-d26366176d39"
+              });</script> </div></div></div></div><div
+class="parceiros flex-column"><h2 class="footer-navegacao-titulo">Parceiros</h2><ul
+class="footer-navegue-lista flex-row"><li
+class="footer-navegue-lista-link --description footer-column-cards">
+<img
+src="/assets/img/footer/scale-up-endeavor.1686744881.png" alt="Programa de aceleração Scale-Up Endeavor"
+class="footer-navegue-lista__image" loading="lazy">
+<span
+class="footer-navegue-lista-link --description --partners">Nós, da Alura, somos uma das Scale-Ups
+selecionadas pela Endeavor, programa de aceleração das empresas que
+mais crescem no país.</span></li><li
+class="footer-navegue-lista-link --description footer-column-cards">
+<img
+src="/assets/img/footer/google-alumni-2021.1686744881.png" alt="Growth Academy 2021 do Google For Startups"
+class="footer-navegue-lista__image" loading="lazy">
+<span
+class="footer-navegue-lista-link --description --partners">Fomos uma das 7 startups selecionadas pelo
+Google For Startups a participar do programa Growth Academy em
+2021.</span></li></ul></div></div></footer><section
+class="footer_categorias-formacoes"><div
+class="container"><div
+class="footer_categorias_wrapper"><h2 class="footer_categorias_title">Cursos</h2><div
+class="footer_categorias_categorias footer-navegue-lista-link"><div
+class="footer_categorias_categoria">
+<a
+href="/cursos-online-programacao">Cursos de Programação</a><div
+class="footer_categorias_subcategorias">
+<a
+href="/cursos-online-programacao/logica">
+Lógica            </a>
+|                        <a
+href="/cursos-online-programacao/python">
+Python            </a>
+|                        <a
+href="/cursos-online-programacao/php">
+PHP            </a>
+|                        <a
+href="/cursos-online-programacao/java">
+Java            </a>
+|                        <a
+href="/cursos-online-programacao/dotnet">
+.NET            </a>
+|                        <a
+href="/cursos-online-programacao/node-js">
+Node JS            </a>
+|                        <a
+href="/cursos-online-programacao/linguagem-c">
+C            </a>
+|                        <a
+href="/cursos-online-programacao/computacao">
+Computação            </a>
+|                        <a
+href="/cursos-online-programacao/jogos">
+Jogos            </a>
+|                        <a
+href="/cursos-online-programacao/internet-das-coisas">
+IoT            </a></div></div><div
+class="footer_categorias_categoria">
+<a
+href="/cursos-online-front-end">Cursos de Front-end</a><div
+class="footer_categorias_subcategorias">
+<a
+href="/cursos-online-front-end/front-end">
+HTML, CSS            </a>
+|                        <a
+href="/cursos-online-front-end/reactjs">
+React            </a>
+|                        <a
+href="/cursos-online-front-end/angular">
+Angular            </a>
+|                        <a
+href="/cursos-online-front-end/javascript">
+JavaScript            </a>
+|                        <a
+href="/cursos-online-front-end/jquery">
+jQuery            </a></div></div><div
+class="footer_categorias_categoria">
+<a
+href="/cursos-online-data-science">Cursos de Data Science</a><div
+class="footer_categorias_subcategorias">
+<a
+href="/cursos-online-data-science/data-science">
+Ciência de dados            </a>
+|                        <a
+href="/cursos-online-data-science/business-intelligence">
+BI            </a>
+|                        <a
+href="/cursos-online-data-science/sql">
+SQL e Banco de Dados            </a>
+|                        <a
+href="/cursos-online-data-science/excel">
+Excel            </a>
+|                        <a
+href="/cursos-online-data-science/machine-learning">
+Machine Learning            </a>
+|                        <a
+href="/cursos-online-data-science/nosql">
+NoSQL            </a>
+|                        <a
+href="/cursos-online-data-science/estatistica">
+Estatística            </a></div></div><div
+class="footer_categorias_categoria">
+<a
+href="/cursos-online-inteligencia-artificial">Cursos de Inteligência Artificial</a><div
+class="footer_categorias_subcategorias">
+<a
+href="/cursos-online-inteligencia-artificial/ia-para-programacao">
+IA para Programação            </a>
+|                        <a
+href="/cursos-online-inteligencia-artificial/ia-para-dados">
+IA para Dados            </a></div></div><div
+class="footer_categorias_categoria">
+<a
+href="/cursos-online-devops">Cursos de DevOps</a><div
+class="footer_categorias_subcategorias">
+<a
+href="/cursos-online-devops/aws">
+AWS            </a>
+|                        <a
+href="/cursos-online-devops/azure">
+Azure            </a>
+|                        <a
+href="/cursos-online-devops/containers">
+Docker            </a>
+|                        <a
+href="/cursos-online-devops/seguranca">
+Segurança            </a>
+|                        <a
+href="/cursos-online-devops/infraestrutura-como-codigo">
+IaC            </a>
+|                        <a
+href="/cursos-online-devops/linux-comandos-e-processos">
+Linux            </a></div></div><div
+class="footer_categorias_categoria">
+<a
+href="/cursos-online-design-ux">Cursos de UX & Design</a><div
+class="footer_categorias_subcategorias">
+<a
+href="/cursos-online-design-ux/ux">
+Usabilidade e UX            </a>
+|                        <a
+href="/cursos-online-design-ux/video">
+Vídeo e Motion            </a>
+|                        <a
+href="/cursos-online-design-ux/3d">
+3D            </a></div></div><div
+class="footer_categorias_categoria">
+<a
+href="/cursos-online-mobile">Cursos de Mobile</a><div
+class="footer_categorias_subcategorias">
+<a
+href="/cursos-online-mobile/react-native">
+React Native            </a>
+|                        <a
+href="/cursos-online-mobile/flutter-mobile">
+Flutter            </a>
+|                        <a
+href="/cursos-online-mobile/ios">
+iOS e Swift            </a>
+|                        <a
+href="/cursos-online-mobile/android">
+Android, Kotlin            </a>
+|                        <a
+href="/cursos-online-mobile/jogos">
+Jogos            </a></div></div><div
+class="footer_categorias_categoria">
+<a
+href="/cursos-online-inovacao-gestao">Cursos de Inovação & Gestão</a><div
+class="footer_categorias_subcategorias">
+<a
+href="/cursos-online-inovacao-gestao/agilidade">
+Métodos Ágeis            </a>
+|                        <a
+href="/cursos-online-inovacao-gestao/softskills-carreira">
+Softskills            </a>
+|                        <a
+href="/cursos-online-inovacao-gestao/gestao-corporativa">
+Liderança e Gestão            </a>
+|                        <a
+href="/cursos-online-inovacao-gestao/startup-empreendedorismo">
+Startups            </a>
+|                        <a
+href="/cursos-online-inovacao-gestao/vendas">
+Vendas            </a></div></div></div></div></div></section><style>@media not all and (min-width: 1024px) {
+			.grupoCaelum {
+				display: none;
+			}
+		}
+
+		.grupoCaelum {
+			background: #fff;
+			height: 400px;
+			border-top: 1px solid #EBEBEE;
+		}
+
+		.grupoCaelum .container {
+			display: flex;
+			justify-content: space-between;
+			align-items: flex-start;
+			padding-top: 0;
+			padding-bottom: 0;
+			height: 100%;
+		}
+
+		.grupoCaelum-list {
+			display: flex;
+			list-style: none;
+			width: 80%;
+			justify-content: space-between;
+			align-items: flex-start;
+			margin-top: 1.25rem;
+		}
+
+		.grupoCaelum-title {
+			width: 20%;
+		}
+
+		.grupoCaelum-column {
+			display: inline-block;
+			padding-left: 1.1875rem;
+			width: 240px;
+			height: 350px;
+			min-width: 160px;
+		}
+
+		.grupoCaelum-column-title {
+			font-size: 0.625rem;
+			color: #d7e0e5;
+			text-transform: uppercase;
+			font-weight: 600;
+			margin-bottom: 1.1875rem;
+		}
+
+		.grupoCaelum-column-list {
+			list-style: none;
+		}
+
+		.column-item-title {
+			font-size: 0.6875rem;
+			text-align: center;
+			vertical-align: middle;
+			display: inline-block;
+			margin-left: 0.375rem;
+		}
+
+		.grupoCaelum-column:not(:first-child) {
+			border-left: solid 1px #e3e9ed;
+		}
+
+		.grupoCaelum-title {
+			display: inline-block;
+			text-decoration: none;
+			color: #657176;
+			letter-spacing: normal;
+			font-size: 1.125rem;
+			margin-top: 3.375rem;
+		}
+
+		.column-item-logo {
+			width: 30px;
+			height: 30px;
+			vertical-align: middle;
+			display: inline-block;
+		}
+
+		.column-item {
+			margin-bottom: 1.0625rem;
+		}
+
+		.column-item a {
+			text-decoration: none;
+			color: #657176;
+			display: flex;
+			align-items: center;
+		}</style><footer
+class="caelum-footer" id="caelum-footer"><div
+class="grupoCaelum"><div
+class="container"><p
+class="grupoCaelum-title">Alura</p><ul
+class="grupoCaelum-list"><li
+class="grupoCaelum-column"><p
+class="grupoCaelum-column-title">Educação em Tecnologia</p><ul
+class="grupoCaelum-column-list"><li
+class="column-item">
+<a
+target="_blank" href="https://www.fiap.com.br/">
+<img
+class="column-item-logo" src="https://www.alura.com.br/assets/img/caelumFooter/fiap.1686744881.svg" alt="logo fiap" loading="lazy" />
+<span
+class="column-item-title">FIAP</span>
+</a></li><li
+class="column-item">
+<a
+target="_blank" href="https://www.casadocodigo.com.br">
+<img
+class="column-item-logo" src="https://www.alura.com.br/assets/img/caelumFooter/cdc.1686744881.svg" alt="logo casa do codigo" loading="lazy" />
+<span
+class="column-item-title">Casa do Código</span>
+</a></li><li
+class="column-item">
+<a
+target="_blank" style="fill: #657176" href="https://www.cursospm3.com.br/">
+<img
+class="column-item-logo" src="https://www.alura.com.br/assets/img/caelumFooter/pm3.1686744881.svg" alt="logo pm3" loading="lazy" />
+<span
+class="column-item-title">PM3 - Cursos de Produto</span>
+</a></li></ul></li><li
+class="grupoCaelum-column"><p
+class="grupoCaelum-column-title">Mais Alura</p><ul
+class="grupoCaelum-column-list"><li
+class="column-item">
+<a
+target="_blank" href="https://www.alurastart.com.br">
+<img
+class="column-item-logo" src="https://www.alura.com.br/assets/img/caelumFooter/alurastart.1686744881.svg" alt="logo alura start" loading="lazy" />
+<span
+class="column-item-title">Alura Start</span>
+</a></li><li
+class="column-item">
+<a
+target="_blank" href="https://www.aluralingua.com.br">
+<img
+class="column-item-logo" src="https://www.alura.com.br/assets/img/caelumFooter/aluralingua.1686744881.svg" alt="logo alura lingua" loading="lazy" />
+<span
+class="column-item-title">Alura Língua</span>
+</a></li><li
+class="column-item">
+<a
+target="_blank" href="https://www.alura.com.br/empresas">
+<img
+class="column-item-logo" src="https://www.alura.com.br/assets/img/caelumFooter/alura-empresas.1686744881.svg" alt="logo alura para empresas" loading="lazy" />
+<span
+class="column-item-title">Alura Para Empresas</span>
+</a></li><li
+class="column-item">
+<a
+target="_blank" href="https://www.aluracursos.com">
+<img
+class="column-item-logo" src="https://www.alura.com.br/assets/img/caelumFooter/alura.1686744881.svg" alt="logo alura latam" loading="lazy" />
+<span
+class="column-item-title">Alura LATAM</span>
+</a></li></ul></li><li
+class="grupoCaelum-column"><p
+class="grupoCaelum-column-title">Comunidade</p><ul
+class="grupoCaelum-column-list"><li
+class="column-item">
+<a
+target="_blank" href="
+https://techguide.sh/								">
+<img
+class="column-item-logo" src="https://www.alura.com.br/assets/img/caelumFooter/techguide.1686744881.svg" alt="logo tech guide" loading="lazy" />
+<span
+class="column-item-title">Tech Guide</span>
+</a></li><li
+class="column-item">
+<a
+target="_blank" href="https://7daysofcode.io/">
+<img
+class="column-item-logo" src="https://www.alura.com.br/assets/img/caelumFooter/7days.1686744881.svg" alt="logo 7 days of code"loading="lazy" />
+<span
+class="column-item-title">7 days of code</span>
+</a></li><li
+class="column-item">
+<a
+target="_blank" href="https://hipsters.jobs">
+<img
+class="column-item-logo" src="https://www.alura.com.br/assets/img/caelumFooter/hipstersjobs.1686744881.svg" alt="logo Hipsters ponto Jobs" loading="lazy" />
+<span
+class="column-item-title">Hipsters ponto Jobs</span>
+</a></li></ul></li><li
+class="grupoCaelum-column"><p
+class="grupoCaelum-column-title">Podcasts</p><ul
+class="grupoCaelum-column-list"><li
+class="column-item">
+<a
+target="_blank" href="https://hipsters.tech">
+<img
+class="column-item-logo" src="https://www.alura.com.br/assets/img/caelumFooter/hipsterstech.1686744881.svg" alt="logo Hipsters ponto Tech" loading="lazy" />
+<span
+class="column-item-title">Hipsters ponto Tech</span>
+</a></li><li
+class="column-item">
+<a
+target="_blank" href="https://www.devsemfronteiras.tech/">
+<img
+class="column-item-logo" src="https://www.alura.com.br/assets/img/caelumFooter/devsemfronteiras.1686744881.svg" alt="logo Dev sem fronteiras" loading="lazy" />
+<span
+class="column-item-title">Dev sem Fronteiras</span>
+</a></li><li
+class="column-item">
+<a
+target="_blank" href="https://layerspontotech.com.br">
+<img
+class="column-item-logo" src="https://www.alura.com.br/assets/img/caelumFooter/layerstech.1686744881.svg" alt="logo Layers ponto Tech" loading="lazy" />
+<span
+class="column-item-title">Layers ponto Tech</span>
+</a></li></ul></li></ul></div></div></footer> <script>(function(){
+    var match = location.pathname.match(/\/(bf-|black-?friday\/)([^\/]+)/);
+    if (match != null) {
+        var links = document.querySelectorAll('.plans__card--button');
+        for (var i = 0; i < links.length; i++) {
+            var href = links[i].getAttribute('href');
+            if (href[0] === '/') {
+                links[i].setAttribute('href', '/bf-' + match[2] + href);
+            }
+        }
+    }
+})();</script> <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js" async></script> <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/10.4.0/highlight.min.js"></script> <script>hljs.initHighlightingOnLoad();</script> <script src="/assets/js/lib/svg4everybody.min.1686744882.js" async></script> <script src="/assets/js/footer/footer.1686744882.js" defer></script> <script src="/assets/js/header/busca.1687365821.js" defer></script> <script src="/assets/js/header/menuMobile.1700263263.js" defer></script> <script src="/assets/js/header/menu.1704729753.js" defer></script> <script src="/assets/js/header/cursos.1686744882.js" defer></script> <script src="/assets/js/detect.1686744882.js" async></script> <script src="/assets/js/video.1686744882.js" defer></script> <script src="/assets/js/countdown.1700773955.js" async></script> <script src="/assets/js/header/cookie-influencer.1700419846.js" async></script> <script src="/assets/js/trackers.1700425100.js" async></script> <script src="/assets/js/courseIconFallback.1686744882.js" defer></script> <script type="text/javascript">_linkedin_partner_id = "465017";
+			window._linkedin_data_partner_ids = window._linkedin_data_partner_ids || [];
+			window._linkedin_data_partner_ids.push(_linkedin_partner_id);</script> <script type="text/javascript">(function(){var s = document.getElementsByTagName("script")[0];
+			var b = document.createElement("script");
+			b.type = "text/javascript";b.async = true;
+			b.src = "https://snap.licdn.com/li.lms-analytics/insight.min.js";
+			s.parentNode.insertBefore(b, s);})();</script> <noscript>
+<img
+height="1" width="1" style="display:none;" alt=""
+src="https://dc.ads.linkedin.com/collect/?pid=465017&fmt=gif" />
+</noscript> <script src="/assets/js/artigos/table-of-contents.1704810120.js" async></script> <script src="/assets/js/artigos/tracker-post-read.1695156182.js" async></script> <script src="/assets/js/artigos/tracker-click-banner-article.1696890832.js" async></script> <script src="https://static.codepen.io/assets/embed/ei.js" async></script> <script src="/assets/js/artigos/iframe-loader.1692273819.js" async></script> </body></html>
